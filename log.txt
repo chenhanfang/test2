@@ -1,0 +1,228 @@
+procl2 rec: hello
+procl rec: hello,too
+Traceback (most recent call last):
+  File "E:\test2\unitest\thread\queue.py", line 19, in <module>
+    queue=multiprocessing .Queue(3)
+  File "D:\python35\lib\multiprocessing\context.py", line 100, in Queue
+    from .queues import Queue
+  File "D:\python35\lib\multiprocessing\queues.py", line 20, in <module>
+    from queue import Empty, Full
+ImportError: cannot import name 'Empty'
+i was listening to 演员! Tue Feb 14 09:40:33 2017
+i was watching 长城! Tue Feb 14 09:40:33 2017
+i was listening to 演员! Tue Feb 14 09:40:35 2017
+i was watching 长城! Tue Feb 14 09:40:38 2017
+all end:Tue Feb 14 09:40:43 2017
+start playing: just want.mp3! Tue Feb 14 09:40:43 2017
+start playing: just want.mp3! Tue Feb 14 09:40:46 2017
+start playing: try.mp4! Tue Feb 14 09:40:43 2017
+start playing: try.mp4! Tue Feb 14 09:40:46 2017
+start playing: let it be.mp3! Tue Feb 14 09:40:43 2017
+start playing: let it be.mp3! Tue Feb 14 09:40:46 2017
+end:Tue Feb 14 09:40:49 2017 
+start playing: yanyuan.mp4 ! Tue Feb 14 09:40:49 2017
+start playing: guiji.mp3 ! Tue Feb 14 09:40:49 2017
+start playing: aijiujianrenxin.mp3 ! Tue Feb 14 09:40:49 2017
+start playing: guiji.mp3 ! Tue Feb 14 09:40:51 2017
+start playing: aijiujianrenxin.mp3 ! Tue Feb 14 09:40:52 2017
+start playing: yanyuan.mp4 ! Tue Feb 14 09:40:54 2017
+end:Tue Feb 14 09:40:59 2017
+procl2 rec: hello
+procl rec: hello,too
+Traceback (most recent call last):
+  File "E:\test2\unitest\thread\queue.py", line 19, in <module>
+    queue=multiprocessing .Queue(3)
+  File "D:\python35\lib\multiprocessing\context.py", line 100, in Queue
+    from .queues import Queue
+  File "D:\python35\lib\multiprocessing\queues.py", line 20, in <module>
+    from queue import Empty, Full
+ImportError: cannot import name 'Empty'
+i was listening to 演员! Tue Feb 14 10:20:06 2017
+i was watching 长城! Tue Feb 14 10:20:06 2017
+i was listening to 演员! Tue Feb 14 10:20:08 2017
+i was watching 长城! Tue Feb 14 10:20:11 2017
+all end:Tue Feb 14 10:20:16 2017
+procl2 rec: hello
+procl rec: hello,too
+Traceback (most recent call last):
+  File "E:\test2\unitest\thread\queue.py", line 19, in <module>
+    queue=multiprocessing .Queue(3)
+  File "D:\python35\lib\multiprocessing\context.py", line 100, in Queue
+    from .queues import Queue
+  File "D:\python35\lib\multiprocessing\queues.py", line 20, in <module>
+    from queue import Empty, Full
+ImportError: cannot import name 'Empty'
+i was listening to 演员! Tue Feb 14 10:28:48 2017
+i was watching 长城! Tue Feb 14 10:28:48 2017
+i was listening to 演员! Tue Feb 14 10:28:50 2017
+i was watching 长城! Tue Feb 14 10:28:53 2017
+all end:Tue Feb 14 10:28:58 2017
+start playing: let it be.mp3! Tue Feb 14 10:28:58 2017
+start playing: let it be.mp3! Tue Feb 14 10:29:01 2017
+start playing: just want.mp3! Tue Feb 14 10:28:58 2017
+start playing: just want.mp3! Tue Feb 14 10:29:01 2017
+start playing: try.mp4! Tue Feb 14 10:28:58 2017
+start playing: try.mp4! Tue Feb 14 10:29:01 2017
+end:Tue Feb 14 10:29:04 2017 
+start playing: yanyuan.mp4 ! Tue Feb 14 10:29:04 2017
+start playing: aijiujianrenxin.mp3 ! Tue Feb 14 10:29:04 2017
+start playing: guiji.mp3 ! Tue Feb 14 10:29:04 2017
+start playing: guiji.mp3 ! Tue Feb 14 10:29:06 2017
+start playing: aijiujianrenxin.mp3 ! Tue Feb 14 10:29:07 2017
+start playing: yanyuan.mp4 ! Tue Feb 14 10:29:09 2017
+end:Tue Feb 14 10:29:14 2017
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "D:\python35\lib\threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "D:\python35\lib\threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\test2\unitest\thread\threadbaidu.py", line 14, in testbaidu
+    driver=webdriver.Ie()
+  File "D:\python35\lib\site-packages\selenium\webdriver\ie\webdriver.py", line 49, in __init__
+    self.iedriver.start()
+  File "D:\python35\lib\site-packages\selenium\webdriver\common\service.py", line 96, in start
+    self.assert_process_still_running()
+  File "D:\python35\lib\site-packages\selenium\webdriver\common\service.py", line 109, in assert_process_still_running
+    % (self.path, return_code)
+selenium.common.exceptions.WebDriverException: Message: Service IEDriverServer.exe unexpectedly exited. Status code was: 3221225786
+
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "D:\python35\lib\threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "D:\python35\lib\threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\test2\unitest\thread\threadbaidu.py", line 18, in testbaidu
+    driver=webdriver.Firefox(firefox_binary=binary )
+  File "D:\python35\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 140, in __init__
+    self.service.start()
+  File "D:\python35\lib\site-packages\selenium\webdriver\common\service.py", line 96, in start
+    self.assert_process_still_running()
+  File "D:\python35\lib\site-packages\selenium\webdriver\common\service.py", line 109, in assert_process_still_running
+    % (self.path, return_code)
+selenium.common.exceptions.WebDriverException: Message: Service geckodriver unexpectedly exited. Status code was: 3221225786
+
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "D:\python35\lib\threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "D:\python35\lib\threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\test2\unitest\thread\threadbaidu.py", line 16, in testbaidu
+    driver=webdriver.Chrome()
+  File "D:\python35\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 62, in __init__
+    self.service.start()
+  File "D:\python35\lib\site-packages\selenium\webdriver\common\service.py", line 96, in start
+    self.assert_process_still_running()
+  File "D:\python35\lib\site-packages\selenium\webdriver\common\service.py", line 109, in assert_process_still_running
+    % (self.path, return_code)
+selenium.common.exceptions.WebDriverException: Message: Service chromedriver unexpectedly exited. Status code was: 3221225786
+
+
+start:Tue Feb 14 10:29:15 2017
+browser:chrome
+start:Tue Feb 14 10:29:15 2017
+browser:ie
+start:Tue Feb 14 10:29:15 2017
+browser:firefox
+Traceback (most recent call last):
+  File "E:\test2\unitest\thread\threadbaidu.py", line 39, in <module>
+    threads[t].join()
+  File "D:\python35\lib\threading.py", line 1054, in join
+    self._wait_for_tstate_lock()
+  File "D:\python35\lib\threading.py", line 1070, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+procl2 rec: hello
+procl rec: hello,too
+Traceback (most recent call last):
+  File "E:\test2\unitest\thread\queue.py", line 19, in <module>
+    queue=multiprocessing .Queue(3)
+  File "D:\python35\lib\multiprocessing\context.py", line 100, in Queue
+    from .queues import Queue
+  File "D:\python35\lib\multiprocessing\queues.py", line 20, in <module>
+    from queue import Empty, Full
+ImportError: cannot import name 'Empty'
+i was listening to 演员! Tue Feb 14 10:39:16 2017
+i was watching 长城! Tue Feb 14 10:39:16 2017
+i was listening to 演员! Tue Feb 14 10:39:18 2017
+i was watching 长城! Tue Feb 14 10:39:21 2017
+all end:Tue Feb 14 10:39:26 2017
+start playing: let it be.mp3! Tue Feb 14 10:39:26 2017
+Process Process-3:
+Traceback (most recent call last):
+  File "D:\python35\lib\multiprocessing\process.py", line 249, in _bootstrap
+    self.run()
+  File "D:\python35\lib\multiprocessing\process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\test2\unitest\thread\thread2.py", line 9, in super_player
+    sleep(3)
+KeyboardInterrupt
+start playing: just want.mp3! Tue Feb 14 10:39:26 2017
+start playing: try.mp4! Tue Feb 14 10:39:26 2017
+Process Process-2:
+Traceback (most recent call last):
+  File "D:\python35\lib\multiprocessing\process.py", line 249, in _bootstrap
+    self.run()
+  File "D:\python35\lib\multiprocessing\process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\test2\unitest\thread\thread2.py", line 9, in super_player
+    sleep(3)
+KeyboardInterrupt
+Process Process-1:
+Traceback (most recent call last):
+  File "D:\python35\lib\multiprocessing\process.py", line 249, in _bootstrap
+    self.run()
+  File "D:\python35\lib\multiprocessing\process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "E:\test2\unitest\thread\thread2.py", line 9, in super_player
+    sleep(3)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "E:\test2\unitest\thread\thread2.py", line 27, in <module>
+    threads[t].join()
+  File "D:\python35\lib\multiprocessing\process.py", line 121, in join
+    res = self._popen.wait(timeout)
+  File "D:\python35\lib\multiprocessing\popen_spawn_win32.py", line 81, in wait
+    res = _winapi.WaitForSingleObject(int(self._handle), msecs)
+KeyboardInterrupt
+procl2 rec: hello
+procl rec: hello,too
+Traceback (most recent call last):
+  File "E:\test2\unitest\thread\queue.py", line 19, in <module>
+    queue=multiprocessing .Queue(3)
+  File "D:\python35\lib\multiprocessing\context.py", line 100, in Queue
+    from .queues import Queue
+  File "D:\python35\lib\multiprocessing\queues.py", line 20, in <module>
+    from queue import Empty, Full
+ImportError: cannot import name 'Empty'
+i was listening to 演员! Tue Feb 14 13:31:39 2017
+i was watching 长城! Tue Feb 14 13:31:39 2017
+i was listening to 演员! Tue Feb 14 13:31:41 2017
+i was watching 长城! Tue Feb 14 13:31:44 2017
+all end:Tue Feb 14 13:31:49 2017
+start playing: let it be.mp3! Tue Feb 14 13:31:49 2017
+start playing: let it be.mp3! Tue Feb 14 13:31:52 2017
+start playing: try.mp4! Tue Feb 14 13:31:49 2017
+start playing: try.mp4! Tue Feb 14 13:31:52 2017
+start playing: just want.mp3! Tue Feb 14 13:31:49 2017
+start playing: just want.mp3! Tue Feb 14 13:31:52 2017
+end:Tue Feb 14 13:31:55 2017 
+start playing: aijiujianrenxin.mp3 ! Tue Feb 14 13:31:55 2017
+start playing: yanyuan.mp4 ! Tue Feb 14 13:31:55 2017
+start playing: guiji.mp3 ! Tue Feb 14 13:31:55 2017
+start playing: guiji.mp3 ! Tue Feb 14 13:31:57 2017
+start playing: aijiujianrenxin.mp3 ! Tue Feb 14 13:31:58 2017
+start playing: yanyuan.mp4 ! Tue Feb 14 13:32:00 2017
+end:Tue Feb 14 13:32:05 2017
+start:Tue Feb 14 13:32:05 2017
+browser:firefox
+start:Tue Feb 14 13:32:05 2017
+browser:ie
+start:Tue Feb 14 13:32:05 2017
+browser:chrome
+end:Tue Feb 14 13:32:22 2017
+^C

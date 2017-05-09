@@ -1,0 +1,65 @@
+FFFFF
+======================================================================
+FAIL: test1.test_number
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\python35\lib\site-packages\nose\case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "e:\test2\nosetest\test1.py", line 4, in test_number
+    assert math.sqrt(8)==4
+AssertionError
+
+======================================================================
+FAIL: test1.test_number2
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\python35\lib\site-packages\nose\case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "e:\test2\nosetest\test1.py", line 7, in test_number2
+    assert math.sin(180)==2
+AssertionError
+
+======================================================================
+FAIL: test2.testfunc
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\python35\lib\site-packages\nose\case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "e:\test2\nosetest\test2.py", line 4, in testfunc
+    assert a==b
+AssertionError
+
+======================================================================
+FAIL: test3.testclass.Testfunc1
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\python35\lib\site-packages\nose\case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "e:\test2\nosetest\test3.py", line 14, in Testfunc1
+    assert self.arr1==self.arr2
+AssertionError: 
+-------------------- >> begin captured stdout << ---------------------
+Mytestclass setup
+Mytestclassteardown
+
+--------------------- >> end captured stdout << ----------------------
+
+======================================================================
+FAIL: test3.testclass.Testfunc2
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\python35\lib\site-packages\nose\case.py", line 198, in runTest
+    self.test(*self.arg)
+  File "e:\test2\nosetest\test3.py", line 17, in Testfunc2
+    assert self.arr1==2
+AssertionError: 
+-------------------- >> begin captured stdout << ---------------------
+Mytestclass setup
+Mytestclassteardown
+
+--------------------- >> end captured stdout << ----------------------
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.011s
+
+FAILED (failures=5)

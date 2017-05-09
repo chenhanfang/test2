@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="2" name="pytest" skips="0" tests="2" time="0.062"><testcase classname="pytest.test4" file="pytest\test4.py" line="0" name="test_needsfiles" time="0.024001359939575195"><failure message="assert 0">tmpdir = local(&apos;C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\pytest-of-Administrator\\pytest-5\\test_needsfiles0&apos;)
+
+    def test_needsfiles(tmpdir):
+        print(tmpdir)
+&gt;       assert 0
+E       assert 0
+
+pytest\test4.py:3: AssertionError</failure><system-out>C:\Users\ADMINI~1\AppData\Local\Temp\pytest-of-Administrator\pytest-5\test_needsfiles0
+</system-out></testcase><testcase classname="pytest.test4" file="pytest\test4.py" line="6" name="test_answer" time="0.0009999275207519531"><failure message="assert 4 == 5
+ +  where 4 = func(3)">def test_answer():
+&gt;       assert func(3)==5
+E       assert 4 == 5
+E        +  where 4 = func(3)
+
+pytest\test4.py:8: AssertionError</failure></testcase></testsuite>
